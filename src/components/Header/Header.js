@@ -31,7 +31,7 @@ function Header() {
                 <div className="contact-number"><a href="tel:+79162090997">+7 (916) 209 09 97</a></div>
             </div>
             <header className="header">
-                <a href="#" className="logo">
+                <a href="#main" className="logo">
                     <img src={Logo} alt="Logo"/>
                 </a>
                 <input className="menu-btn" type="checkbox" id="menu-btn"/>
