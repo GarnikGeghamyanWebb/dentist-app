@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/dentist-app/static/css/main.d92a2664.css",
+    "main.js": "/dentist-app/static/js/main.6ae62d36.js",
+    "static/js/787.27d80096.chunk.js": "/dentist-app/static/js/787.27d80096.chunk.js",
+    "static/media/Main.png": "/dentist-app/static/media/Main.15ce081683a639766538.png",
+    "static/media/item_4.png": "/dentist-app/static/media/item_4.78bd5fffff167ecf8e27.png",
+    "static/media/item_1.png": "/dentist-app/static/media/item_1.decefbd9e37e29913385.png",
+    "static/media/item_2.png": "/dentist-app/static/media/item_2.f125edb7726b8645b10d.png",
+    "static/media/MyJobs_4.png": "/dentist-app/static/media/MyJobs_4.3ae7b56bcf09f8a56579.png",
+    "static/media/MyJobs_3.png": "/dentist-app/static/media/MyJobs_3.d90d738b0d7b6e576110.png",
+    "static/media/MyJobs_2.png": "/dentist-app/static/media/MyJobs_2.5f659cd9947cc57e4256.png",
+    "static/media/MyJobs_1.png": "/dentist-app/static/media/MyJobs_1.22b25c492d932f830481.png",
+    "static/media/item_5.png": "/dentist-app/static/media/item_5.e6665c3690ea14fc9fc0.png",
+    "static/media/MyJobs_6.png": "/dentist-app/static/media/MyJobs_6.2a352a0972f6c6e022ee.png",
+    "static/media/MyJobs_5.png": "/dentist-app/static/media/MyJobs_5.b2eae204256bed6938ce.png",
+    "static/media/item_3.png": "/dentist-app/static/media/item_3.a407cad968fb2ce20a8b.png",
+    "static/media/BasicServices.png": "/dentist-app/static/media/BasicServices.e2f112ae067965802258.png",
+    "static/media/PhoneIcon.svg": "/dentist-app/static/media/PhoneIcon.0d3e7ec39bcf8c9d009d2cbbba7f006c.svg",
+    "static/media/Mail.svg": "/dentist-app/static/media/Mail.6bff74d9e6a4384cf8c1fac76d1c9a90.svg",
+    "index.html": "/dentist-app/index.html",
+    "static/media/Mark.svg": "/dentist-app/static/media/Mark.fb19a8f38342403650a8b9b5ca39c5d4.svg",
+    "main.d92a2664.css.map": "/dentist-app/static/css/main.d92a2664.css.map",
+    "main.6ae62d36.js.map": "/dentist-app/static/js/main.6ae62d36.js.map",
+    "787.27d80096.chunk.js.map": "/dentist-app/static/js/787.27d80096.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d92a2664.css",
+    "static/js/main.6ae62d36.js"
+  ]
+}
