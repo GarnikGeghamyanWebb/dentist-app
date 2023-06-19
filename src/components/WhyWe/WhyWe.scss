@@ -1,0 +1,35 @@
+.why-we {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+
+  .why-we--header {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 87px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161841;
+  }
+
+  .why-we--content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 968px) {
+  .why-we {
+    .why-we--header {
+      font-size: 44px;
+      line-height: 57px;
+    }
+  }
+}

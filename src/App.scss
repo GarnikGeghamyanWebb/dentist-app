@@ -1,0 +1,534 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1520px;
+
+  padding: 20px;
+}
+
+.item-container-dark {
+  width: 100%;
+  background: #F9FAFB;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 20px;
+    max-width: 1520px;
+
+    img {
+      width: 45%;
+    }
+
+    .item-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+
+      .item-text--paragraph {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 36px;
+        color: #161841;
+      }
+
+      .item-text--title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 87px;
+        text-transform: uppercase;
+        color: #161841;
+      }
+
+      .item-text--description {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 36px;
+        color: #161841;
+      }
+    }
+  }
+}
+
+.item-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 20px;
+    max-width: 1520px;
+    img {
+      width: 45%;
+    }
+    .item-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      .item-text--title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 87px;
+        text-transform: uppercase;
+        color: #161841;
+      }
+      .item-text--paragraph {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 36px;
+        color: #161841;
+      }
+      .item-text--description {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 36px;
+        color: #161841;
+      }
+      ul {
+        li {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 32px;
+          color: #161841;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .item {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      img {
+        width: 30%;
+      }
+      .item-text {
+        align-items: flex-start;
+        gap: 10px;
+        .item-text--title {
+          font-size: 64px;
+          line-height: 1;
+        }
+        .item-text--paragraph {
+          font-size: 24px;
+          line-height: 1.3;
+        }
+        .item-text--description {
+          font-size: 24px;
+          line-height: 1.3;
+        }
+        ul {
+          li {
+            font-size: 22px;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.basic-services-container {
+  width: 100%;
+  background: #F9FAFB;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 20px;
+    max-width: 1520px;
+
+    .item-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+
+      .item-text--title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 87px;
+        text-transform: uppercase;
+        color: #161841;
+      }
+    }
+  }
+
+  .basic-services-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+    .basic-services-item {
+      width: 480px;
+      height: 515px;
+      background: #FFFFFF;
+      border: 2.70936px solid #ECF1F2;
+      box-shadow: 0px 5.41873px 33.8671px rgba(2, 43, 105, 0.05);
+      border-radius: 20px;
+      box-sizing: border-box;
+      padding: 20px;
+
+      img {
+        background: #D9D9D9;
+        border-radius: 10px;
+        width: 440px;
+        height: 332px;
+      }
+
+      .basic-services-item--text {
+        padding: 40px 20px;
+        font-family: 'HelveticaNeueCyr';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #161841;
+      }
+    }
+  }
+}
+
+.my-jobs--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 20px;
+    max-width: 1520px;
+
+    .item-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      .item-text--title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 87px;
+        text-transform: uppercase;
+        color: #161841;
+      }
+    }
+  }
+  .my-jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    .my-jobs--item {
+      img {
+        height: 478px;
+        width: 478px;
+        background: #D9D9D9;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.my-jobs--map {
+  width: 100vw;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  width: 100%;
+  background: #161841;
+  padding: 60px 20px 20px 20px;
+  box-sizing: border-box;
+
+  .footer-container {
+    width: 100%;
+    max-width: 1520px;
+
+    .footer-container--contacts {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 120px;
+      padding-bottom: 60px;
+
+      .footer-container--contacts-item {
+
+        .footer-container--contacts-item--header {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 87px;
+          color: #FFFFFF;
+        }
+        .footer-container--contacts-item--text {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 20px;
+
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 36px;
+          color: #FFFFFF;
+
+          img {
+            width: 25px;
+          }
+        }
+
+        .footer-container--contacts-item--social-icon {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 33px;
+          width: 33px;
+          background: #FFFFFF;
+          border-radius: 5px;
+
+          img {
+            width: 18px;
+          }
+
+          &:hover {
+            background: #2C62D6;
+
+            path {
+              fill: #FFFFFF!important;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-container--corp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.11);
+      padding-top: 20px;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #FFFFFF;
+    }
+  }
+}
+
+@media (max-width: 1124px) {
+  .my-jobs--container {
+    .item {
+      .item-text {
+        .item-text--title {
+          font-size: 44px;
+          line-height: 57px;
+        }
+      }
+    }
+  }
+
+  .item-container {
+    .item {
+      .item-text {
+        .item-text--title {
+          font-size: 44px;
+          line-height: 57px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 968px) {
+  .my-jobs--container {
+    .item {
+      .item-text {
+        .item-text--title {
+          font-size: 24px;
+          text-align: center;
+          line-height: 40px;
+        }
+
+        .item-text--description {
+          font-size: 18px;
+          text-align: center;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .item-container {
+    .item {
+      .item-text {
+        .item-text--title {
+          font-size: 24px;
+          text-align: center;
+          line-height: 40px;
+        }
+
+        .item-text--description {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .content {
+    margin-top: 117px;
+  }
+
+  .item-container-dark {
+    .item {
+      flex-direction: column;
+
+      img {
+        width: calc(100% - 40px);
+        height: unset;
+      }
+    }
+  }
+
+  .my-jobs--container .item {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 769px) {
+  .basic-services-container .item .item-text .item-text--title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .basic-services-container {
+    .item {
+      padding-top: 20px;
+    }
+  }
+
+  .basic-services-container .basic-services-wrapper .basic-services-item {
+    width: calc(100% - 40px);
+    height: unset;
+
+    img {
+      width: 100%;
+      height: unset;
+    }
+  }
+
+  .basic-services-container .item {
+    gap: 25px;
+  }
+
+  .my-jobs--container .my-jobs .my-jobs--item img {
+    width: calc(100% - 40px);
+    height: unset;
+  }
+
+  .item-container .item img {
+    width: calc(100% - 40px);
+  }
+
+  .item-container-dark .item .item-text .item-text--title {
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .item-container .item {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .types-of-prosthetics {
+    flex-direction: column-reverse!important;
+  }
+
+  .my-jobs--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
