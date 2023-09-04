@@ -8,7 +8,9 @@ import './Header.scss';
 
 function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const [menuIconKey, setMenuIconKey] = useState(0);
     const mobileMenuRef = useRef(null);
+    const mobileMenuIconRef = useRef(null);
 
     useOnClickOutside(mobileMenuRef, () => {
         if (!showMobileMenu) {
@@ -24,6 +26,12 @@ function Header() {
         }
     }
 
+    const handleItemSelect = () => {
+        setShowMobileMenu(false);
+        // setMenuIconKey((prev) => prev + 1);
+        mobileMenuIconRef.current.click();
+    }
+
     return (
         <>
             <div className="contact-mobile">
@@ -35,7 +43,7 @@ function Header() {
                     <img src={Logo} alt="Logo"/>
                 </a>
                 <input className="menu-btn" type="checkbox" id="menu-btn"/>
-                <label className="menu-icon" onClick={handleMenuOpen} htmlFor="menu-btn">
+                <label className="menu-icon" ref={mobileMenuIconRef} onClick={handleMenuOpen} htmlFor="menu-btn">
                     <span className="navicon"/>
                 </label>
                 <div className="menu">
@@ -50,11 +58,11 @@ function Header() {
                     <div className="contact-number"><a href="tel:+79162090997">+7 (916) 209 09 97</a></div>
                 </div>
                 <div className={`mobile-menu ${showMobileMenu ? 'show' : ''}`} ref={mobileMenuRef}>
-                    <div className="mobile-menu-item"><a href="#main">Главная</a></div>
-                    <div className="mobile-menu-item"><a href="#about">О нас</a></div>
-                    <div className="mobile-menu-item"><a href="#offers">Основные Услуги</a></div>
-                    <div className="mobile-menu-item"><a href="#jobs">Мои работы</a></div>
-                    <div className="mobile-menu-item"><a href="#contacts">Контакты</a></div>
+                    <div className="mobile-menu-item" onClick={handleItemSelect}><a href="#main">Главная</a></div>
+                    <div className="mobile-menu-item" onClick={handleItemSelect}><a href="#about">О нас</a></div>
+                    <div className="mobile-menu-item" onClick={handleItemSelect}><a href="#offers">Основные Услуги</a></div>
+                    <div className="mobile-menu-item" onClick={handleItemSelect}><a href="#jobs">Мои работы</a></div>
+                    <div className="mobile-menu-item" onClick={handleItemSelect}><a href="#contacts">Контакты</a></div>
                 </div>
             </header>
         </>

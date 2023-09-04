@@ -1,5 +1,6 @@
 import WhyWeItem from "../WhyWeItem/WhyWeItem";
 import './WhyWe.scss';
+import {ApproachIcon, ExperienceIcon, LabIcon, TeamIcon} from "../../icons/Instagram";
 
 function WhyWe() {
     return (
@@ -8,10 +9,10 @@ function WhyWe() {
                 Почему выбрать нас
             </div>
             <div className="why-we--content">
-                <WhyWeItem text="Профессиональный коллектив"/>
-                <WhyWeItem text="Своя лаборатория"/>
-                <WhyWeItem text="Большой опыт работы"/>
-                <WhyWeItem text="Индивидуальный подход"/>
+                <WhyWeItem text="Профессиональный коллектив" icon={<TeamIcon />}/>
+                <WhyWeItem text="Своя лаборатория" icon={<LabIcon />}/>
+                <WhyWeItem text="Большой опыт работы" icon={<ExperienceIcon />}/>
+                <WhyWeItem text="Индивидуальный подход" icon={<ApproachIcon />}/>
             </div>
         </div>
     );

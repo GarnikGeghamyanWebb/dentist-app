@@ -72,15 +72,30 @@
     box-sizing: border-box;
 
     &:hover {
-      color: #396CF0;
-      border-bottom: 6px solid #396CF0;
-      cursor: pointer;
+      //color: #396CF0;
+      //border-bottom: 6px solid #396CF0;
+      //cursor: pointer;
+      & ::after {
+        content: "";
+        height: 2px;
+        width: 100px;
+        background: red;
+      }
     }
 
     .active {
       color: #396CF0;
       border-bottom: 6px solid #396CF0;
     }
+
+    a {
+      text-decoration: none;
+      color: #161841;
+      &:hover {
+        color: #396CF0;
+      }
+    }
+
   }
 }
 
@@ -148,6 +163,11 @@
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
+}
+
+.header .logo img{
+  width: 201px;
+  margin-top: 10px;
 }
 
 .contact {
@@ -233,42 +253,59 @@
 
   .mobile-menu {
     width: 100%;
+    padding-top: 30px;
     padding-bottom: 20px;
     background: white;
     position: absolute;
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 
     .mobile-menu-item {
       font-family: 'Raleway';
       font-style: normal;
+      text-decoration: none;
       font-weight: 700;
-      font-size: 20px;
       line-height: 26px;
       color: #161841;
       height: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       box-sizing: border-box;
+      max-height: 50px;
+      font-size: 24px;
+      a {
+        text-decoration: none;
+        color: #161841;
+      }
 
       &:hover {
         color: #396CF0;
-        border-bottom: 6px solid #396CF0;
+        border-bottom: 4px solid #396CF0;
         cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: #161841;
+        }
       }
 
       .active {
         color: #396CF0;
-        border-bottom: 6px solid #396CF0;
+        border-bottom: 4px solid #396CF0;
+        a {
+          text-decoration: none;
+          color: #161841;
+        }
       }
     }
   }
 
   .show {
     display: flex;
+    height: calc(100vh - 135px);
     top: 79px;
     z-index: 9999;
   }

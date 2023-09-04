@@ -24,10 +24,10 @@
 .item-container-dark {
   width: 100%;
   background: #F9FAFB;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 
   .item {
     display: flex;
@@ -45,26 +45,36 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
       gap: 20px;
+
+      ul {
+        margin-block-start: 0!important;
+        margin-block-end: 0!important;
+        li {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+      }
 
       .item-text--paragraph {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
-        font-size: 22px;
-        line-height: 36px;
         color: #161841;
+        font-size: 22px;
+        line-height: 1.3;
       }
 
       .item-text--title {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 46px;
         line-height: 87px;
         text-transform: uppercase;
         color: #161841;
+        font-size: 46px;
+        margin-bottom: 20px;
       }
 
       .item-text--description {
@@ -145,14 +155,16 @@
       align-items: flex-start;
       justify-content: space-between;
       img {
-        width: 30%;
+        width: 45%;
       }
       .item-text {
         align-items: flex-start;
         gap: 10px;
+
         .item-text--title {
-          font-size: 64px;
+          font-size: 46px;
           line-height: 1;
+          margin-bottom: 20px;
         }
         .item-text--paragraph {
           font-size: 24px;
@@ -169,6 +181,11 @@
           }
         }
       }
+    }
+  }
+  @media screen and (min-width: 1023px) {
+    .item-container-dark .item .item-text{
+      width: 750px;
     }
   }
 }
@@ -196,7 +213,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
       gap: 20px;
 
       .item-text--title {
@@ -236,14 +253,14 @@
       }
 
       .basic-services-item--text {
-        padding: 40px 20px;
         font-family: 'HelveticaNeueCyr';
         font-style: normal;
-        font-weight: 550;
         font-size: 24px;
-        line-height: 36px;
         text-align: center;
         color: #161841;
+        padding: 20px 20px 10px 20px;
+        font-weight: 500;
+        line-height: 30px;
       }
     }
   }
@@ -260,14 +277,14 @@
     justify-content: center;
     align-items: center;
     gap: 80px;
-    padding: 100px 20px;
+    padding: 100px 20px 60px 20px;
     max-width: 1520px;
 
     .item-text {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       gap: 20px;
 
       .item-text--title {
@@ -286,7 +303,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 
     .my-jobs--item {
       img {
@@ -322,10 +339,10 @@
       display: flex;
       flex-direction: row;
       align-items: flex-start;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 120px;
       padding-bottom: 60px;
+      gap: 30px;
+      justify-content: left;
 
       .footer-container--contacts-item {
 
@@ -333,8 +350,9 @@
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
-          line-height: 87px;
           color: #FFFFFF;
+          line-height: 40px;
+          margin-bottom: 20px;
         }
         .footer-container--contacts-item--text {
           display: flex;
@@ -347,6 +365,8 @@
           font-size: 20px;
           line-height: 36px;
           color: #FFFFFF;
+          padding-bottom: 10px;
+          padding-top: 10px;
 
           img {
             width: 25px;
@@ -423,10 +443,11 @@
 @media (max-width: 968px) {
   .my-jobs--container {
     .item {
+      padding-bottom: 40px;
+      padding-top: 60px;
       .item-text {
         .item-text--title {
           font-size: 24px;
-          text-align: center;
           line-height: 40px;
         }
 
@@ -444,7 +465,6 @@
       .item-text {
         .item-text--title {
           font-size: 24px;
-          text-align: center;
           line-height: 40px;
         }
 
@@ -489,7 +509,7 @@
   }
 
   .basic-services-container .basic-services-wrapper .basic-services-item {
-    width: calc(100% - 40px);
+    width: 100%;
     height: unset;
 
     img {
@@ -499,12 +519,19 @@
   }
 
   .basic-services-container .item {
-    gap: 25px;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .my-jobs--container .my-jobs .my-jobs--item img {
     width: calc(100% - 40px);
     height: unset;
+  }
+
+  .my-jobs--container .item {
+    padding-top: 60px;
+    padding-bottom: 40px;
   }
 
   .item-container .item img {
@@ -526,9 +553,35 @@
     flex-direction: column-reverse!important;
   }
 
-  .my-jobs--item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .my-jobs--container {
+    .my-jobs {
+      .my-jobs--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .item-container {
+    .item {
+      gap: 60px;
+    }
+  }
+
+
+  .item {
+    gap: 40px;
+  }
+
+  .item-text {
+    ul {
+      margin-block-start: 0 !important;
+      margin-block-end: 0 !important;
+    }
   }
 }

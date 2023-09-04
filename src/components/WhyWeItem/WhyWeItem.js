@@ -1,9 +1,9 @@
 import './WhyWeItem.scss';
 
-function WhyWeItem({ text }) {
+function WhyWeItem({ text, icon }) {
     return (
         <div className="why-we-item">
-            <div className="why-we-item--icon-container" />
+            {icon}
             <div className="why-we-item--text">{text}</div>
         </div>
     );
