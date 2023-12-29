@@ -10,15 +10,27 @@ permissions:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.build-publish.outputs.page_url }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [16.x]
     steps:
-    - id: build-publish
-      uses: bitovi/github-actions-react-to-ghp@v1.2.0
-      with:
-        path: build # change to your build folder
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Dependencies
+        run: npm install # You may need to adjust this based on your project setup
+
+      - name: Build and Publish
+        id: build-publish
+        run: npm run build # Adjust this based on your project's build command
+
+      - name: Deploy to GitHub Pages
+        uses: bitovi/github-actions-react-to-ghp@v1.2.0
+        with:
+          path: build # change to your build folder
