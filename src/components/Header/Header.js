@@ -8,7 +8,7 @@ import './Header.scss';
 
 function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
-    const [menuIconKey, setMenuIconKey] = useState(0);
+    // const [menuIconKey, setMenuIconKey] = useState(0);
     const mobileMenuRef = useRef(null);
     const mobileMenuIconRef = useRef(null);
 
