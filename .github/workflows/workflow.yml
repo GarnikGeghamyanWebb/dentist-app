@@ -28,17 +28,5 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Set up Git
-        run: |
-          git config --global user.email "garnik.geghamyan1994@gmail.com"
-          git config --global user.name "garnikgeghamyanwebb"
-          git remote set-url origin "https://github.com/${{ github.repository }}"
-          git push
-            --quiet
-            --set-upstream
-            --porcelain
-            ${{ github.repository }}
-            ${{ github.head_ref }}
-
       - name: Deploy
         run: npm run deploy
