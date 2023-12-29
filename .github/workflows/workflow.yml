@@ -28,9 +28,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy
-        run: npm run deploy
-
       - name: Set up Git
         run: |
           git config --global user.email "garnik.geghamyan1994@gmail.com"
@@ -42,3 +39,6 @@ jobs:
             --porcelain
             ${{ github.repository }}
             ${{ github.head_ref }}
+
+      - name: Deploy
+        run: npm run deploy
